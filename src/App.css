@@ -1,0 +1,156 @@
+.App {
+
+  display: grid;
+
+
+  -webkit-grid-template-columns:[one]50%[two]50%[end];
+  -webkit-grid-template-rows:[one]4em[two]auto[end];
+
+  grid-template-columns:[one]50%[two]50%[end];
+  grid-template-rows:[one]4em[two]auto[end];
+
+  -moz-grid-template-columns:[one]50%[two]50%[end];
+  -moz-grid-template-rows:[one]4em[two]auto[end];
+
+
+  grid-template-areas:
+    "header header"
+    "intro test"
+  ;
+
+  justify-items:stretch;
+  
+}
+
+.grid-item-header{
+  grid-area:header;
+
+  background-color:black;
+}
+
+.introText{
+  display: inline-block;
+  margin:5% 5% 5% 5%;
+}
+
+.accordion{
+  border:unset;
+
+  margin:4%;
+
+  background-color:darkgrey;
+}
+
+#italic-text{
+  font-style:italic;
+}
+
+.accordion_submit{
+  border:unset;
+
+  background-color:darkgrey;
+}
+
+Table{
+  text-align: center;
+}
+
+.accToggle{
+  text-align: center;
+}
+
+.card{
+  border:unset;
+  
+  background-color:grey;
+}
+
+.cardBody{
+  border:unset;
+
+  padding:5% 5% 5% 5%;
+
+  background-color:grey;
+}
+
+.accordion_submit , .accToggle, .cardBody_2 {
+  border: unset;
+  
+  background-color:darkgrey;
+}
+
+.accordion_submit:hover{
+  color:grey;
+}
+
+.grid-item-intro{
+  grid-area:intro;
+
+  background-color:grey;
+}
+
+.grid-item-test{
+  grid-area:test;
+  /* text-align: start; */
+  align-self: stretch;
+  background-color: darkgrey;
+}
+
+Form{
+  color: black;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+label{
+  color: black;
+  opacity: 0.8;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  margin:10px;
+}
+
+.form-control{
+  position:relative;
+  min-width:5%;  
+  max-width:20%;
+  display:inline;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.questionTitle{
+  position:relative;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+option{
+  color:grey;
+}
+
+.btn{
+  color:black;
+  opacity: 0.8;
+  /* border-width: 2px;
+  border-color: black; */
+  background-color:grey;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+.btn-project-details{
+  color:black;
+  opacity: 0.8;
+  margin-left: 5%;
+  background-color:darkgrey;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+img{
+  display: inline;
+  width:30%;
+  height:auto;
+  margin:5% 5% 5% 5%;
+}
+
