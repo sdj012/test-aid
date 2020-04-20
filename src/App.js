@@ -61,7 +61,9 @@ class App extends Component {
     
     <div className="App">
 
-    <div className="grid-item-header"></div>
+    <div className="grid-item-header">
+    <p> created by  <a href="https://github.com/sdj012" target="_blank">Salley Jeong</a></p>
+    </div>
 
     
 
