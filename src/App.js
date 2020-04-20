@@ -3,7 +3,6 @@ import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 import {Form} from 'react-bootstrap';
 import {Table} from 'react-bootstrap';
-import {option} from 'react-bootstrap';
 import './App.css';
 
 const bookCover=require('./bookCover.jpg');
@@ -62,15 +61,15 @@ class App extends Component {
     
     <div className="App">
 
-    <div className="grid-item-header">
+    <div className="grid-item-header"></div>
 
-    </div>
+    
 
     <div className="grid-item-intro">
       <img src={bookCover} alt="img"/>
       <p class="introText">
       This is an electronic aid for readers of "Leise gewinnt: So verschaffen sich Introvertierte Gehör" by Doris Märtin.
-      <strong><br></br><br></br>This page does not contain contents of the book. Its functions are not significant on their own. </strong></p>
+      <br></br><br></br>This page does not contain contents of the book. Its functions are not significant on their own.</p>
         
         <Accordion defaultActiveKey="0">
             <Card class="card">
@@ -105,8 +104,7 @@ class App extends Component {
     <div className="grid-item-test">
 
         <Form onSubmit={(e)=>{this.submission();e.preventDefault();}}>
-  
-              <div className="mb-3">
+
               <br></br>
               <p className="Q.Title"><strong>Q. 1</strong></p>
 
@@ -972,7 +970,6 @@ class App extends Component {
                     </Accordion.Collapse>
                   </Card>
               </Accordion>
-            </div>
     
         </Form>
     </div>

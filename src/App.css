@@ -1,3 +1,9 @@
+:root{
+  --navbar:black;
+  --sectionA:white;
+  --sectionB:white;
+}
+
 .App {
 
   display: grid;
@@ -19,17 +25,17 @@
   ;
 
   justify-items:stretch;
-  
+ 
 }
 
 .grid-item-header{
   grid-area:header;
 
-  background-color:black;
+  background-color:var(--navbar)
 }
 
 .introText{
-  display: inline-block;
+  /* display: inline; */
   margin:5% 5% 5% 5%;
 }
 
@@ -38,7 +44,7 @@
 
   margin:4%;
 
-  background-color:darkgrey;
+  background-color:var(--sectionA)
 }
 
 #italic-text{
@@ -48,7 +54,7 @@
 .accordion_submit{
   border:unset;
 
-  background-color:darkgrey;
+  background-color:var(--sectionB)
 }
 
 Table{
@@ -62,7 +68,7 @@ Table{
 .card{
   border:unset;
   
-  background-color:grey;
+  background-color:var(--sectionA)
 }
 
 .cardBody{
@@ -70,37 +76,46 @@ Table{
 
   padding:5% 5% 5% 5%;
 
-  background-color:grey;
+  background-color:var(--sectionA);
 }
 
 .accordion_submit , .accToggle, .cardBody_2 {
-  border: unset;
   
-  background-color:darkgrey;
+  background-color:var(--sectionB);
 }
 
-.accordion_submit:hover{
-  color:grey;
-}
+  .accordion_submit:hover{
+    color:grey;
+  }
 
 .grid-item-intro{
   grid-area:intro;
 
-  background-color:grey;
+  background-color:var(--sectionA);
+
 }
 
 .grid-item-test{
   grid-area:test;
   /* text-align: start; */
   align-self: stretch;
-  background-color: darkgrey;
+
+  background-color: var(--sectionB);
+  
+  height:800px;
+
+  overflow:auto;
 }
 
 Form{
+
+  margin-top:5%;
+
   color: black;
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   margin-left:5%;
   margin-right:5%;
+
 }
 
 label{
@@ -126,8 +141,9 @@ label{
 .App-link {
   color: #09d3ac;
 }
+
 option{
-  color:grey;
+  color:var(--sectionB);
 }
 
 .btn{
@@ -135,7 +151,7 @@ option{
   opacity: 0.8;
   /* border-width: 2px;
   border-color: black; */
-  background-color:grey;
+  background-color:var(--sectionB);
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
@@ -143,14 +159,13 @@ option{
   color:black;
   opacity: 0.8;
   margin-left: 5%;
-  background-color:darkgrey;
+  background-color:var(--sectionB);
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
 img{
   display: inline;
-  width:30%;
-  height:auto;
+
   margin:5% 5% 5% 5%;
 }
 
