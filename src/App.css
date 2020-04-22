@@ -110,7 +110,6 @@ Table{
 
 .grid-item-test{
   grid-area:test;
-  /* text-align: start; */
 
   align-self: stretch;
 
